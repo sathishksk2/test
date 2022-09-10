@@ -13,9 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
 
-      - name: Cleanup workspace
-        uses: rokibhasansagar/slimhub_actions@main
-
       - name: Set Git Configs & Secrets
         run: |
           git config --global user.email ${{ secrets.GHMAIL }}
